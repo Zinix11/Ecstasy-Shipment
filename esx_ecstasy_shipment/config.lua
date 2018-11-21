@@ -1,6 +1,8 @@
 Config = {}
 Config.Locale = 'en'
 
+Config.GiveBlackMoney = true -- give black money, if disabled it will give cash instead 
+
 Config.RequiredCopsRob = 5
 Config.RequiredCopsSell = 1
 
