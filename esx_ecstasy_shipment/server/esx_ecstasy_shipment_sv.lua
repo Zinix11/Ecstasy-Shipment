@@ -146,8 +146,10 @@ local function Craft(source)
 			else   
                 xPlayer.removeInventoryItem('ecstasy', 1)
                 Citizen.Wait(4000)
+				if Config.GiveBlackMoney then
+				xPlayer.addAccountMoney('black_money', 7000)
+			else
 				xPlayer.addMoney(4000)
-				
 				Craft(source)
 			end
 		else
